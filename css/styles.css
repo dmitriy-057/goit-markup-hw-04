@@ -159,7 +159,8 @@ img {
 }
 .hero {
   height: 600px;
-  background-image: url("../images/background-hero.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4)),
+    url("../images/background-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -345,7 +346,16 @@ img {
   box-shadow: 0px 1px 3px 0px #0000001f;
   border-radius: 4px;
 }
-
+.list-icon {
+  display: flex;
+}
+.link-icon {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  margin: 0;
+  fill: #afb1b8;
+}
 /* Футер */
 .footer {
   background-color: var(--third-background-color);
