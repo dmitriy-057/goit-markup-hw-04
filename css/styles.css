@@ -350,17 +350,19 @@ img {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  align-content: center;
 }
 .personal-item {
 }
 .personal-link {
   display: inline-block;
 }
-.personal-item {
+.personal-link-card {
   width: 44px;
   height: 44px;
 }
-.personal-link-instagram {
+.personal-link:not(:last-child) {
+  margin-right: 10px;
 }
 /* Футер */
 .footer {
