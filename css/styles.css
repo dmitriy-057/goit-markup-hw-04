@@ -159,7 +159,10 @@ img {
 }
 .hero {
   height: 600px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(48, 48, 58, 0.4)
+    ),
     url("../images/background-hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -334,7 +337,7 @@ img {
 }
 .person-text {
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.17;
   color: var(--secondary-color);
   text-align: center;
 }
@@ -349,20 +352,27 @@ img {
 .personal-list {
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  align-content: center;
+  justify-content: center;
+  margin-top: 16px;
 }
 .personal-item {
-}
-.personal-link {
-  display: inline-block;
-}
-.personal-link-card {
+  margin-right: 10px;
   width: 44px;
   height: 44px;
+  /* border-radius: 50%;
+  background-color: #212121; */
 }
-.personal-link:not(:last-child) {
-  margin-right: 10px;
+.personal-item:last-child {
+  margin-right: 0px;
+}
+.personal-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.personal-link-card {
+  width: 20px;
+  height: 20px;
 }
 /* Футер */
 .footer {
