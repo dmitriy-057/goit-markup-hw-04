@@ -357,23 +357,29 @@ img {
 }
 .personal-item {
   margin-right: 10px;
-  width: 44px;
-  height: 44px;
-  /* border-radius: 50%;
-  background-color: #212121; */
 }
 .personal-item:last-child {
   margin-right: 0px;
 }
 .personal-link {
+  width: 44px;
+  height: 44px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
 }
 .personal-link-card {
   width: 20px;
   height: 20px;
 }
+
+.personal-item :hover.personal-link,
+.personal-item :focus.personal-link {
+  fill: #ffffff;
+  background-color: var(--hover-color);
+}
+
 /* Футер */
 .footer {
   background-color: var(--third-background-color);
