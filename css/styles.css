@@ -357,6 +357,7 @@ img {
 }
 .personal-item {
   margin-right: 10px;
+  text-align: center;
 }
 .personal-item:last-child {
   margin-right: 0px;
@@ -379,7 +380,26 @@ img {
   fill: #ffffff;
   background-color: var(--hover-color);
 }
-
+/* Клиенты */
+.clients {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+.clients-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: center;
+}
+.clients-list {
+  margin-top: 50px;
+  list-style: none;
+  display: flex;
+}
+.clients-item {
+  margin-right: var(--main-li-margin);
+  flex-basis: calc((100% - 5 * var(--main-li-margin)) / 6);
+}
 /* Футер */
 .footer {
   background-color: var(--third-background-color);
