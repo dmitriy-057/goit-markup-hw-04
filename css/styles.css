@@ -139,14 +139,13 @@ img {
   color: var(--hover-color);
 }
 
-.mail-icon::before {
-  display: inline-block;
+.contacts-icon-email {
   width: 16px;
   height: 12px;
-  content: "";
-  background-image: url("../images/icon/mail.svg");
-  /* background-size: contain; */
-  background-position: center;
+}
+.contacts-icon-phone {
+  width: 10px;
+  height: 16px;
 }
 /* Герой */
 .hero {
@@ -306,19 +305,16 @@ img {
 }
 .team-list {
   display: flex;
-  /* margin-right: calc(-1 * var(--main-li-margin)); */
 }
 .team-item {
   /* width: 270px; */
   margin-right: var(--main-li-margin);
-  /* flex-basis: calc((100% -90px) / 4); */
   flex-basis: calc((100% - 3 * var(--main-li-margin)) / 4);
 }
 .team-item:last-child {
   margin-right: 0px;
 }
 .team-title {
-  /* width: 264px; */
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
@@ -398,8 +394,32 @@ img {
 }
 .clients-item {
   margin-right: var(--main-li-margin);
-  flex-basis: calc((100% - 5 * var(--main-li-margin)) / 6);
+  flex-basis: calc(100% - 5 * var(--main-li-margin) / 6);
 }
+.clients-item:last-child {
+  margin-right: 0px;
+}
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.clients-link-card {
+  width: 106px;
+  height: 60px;
+}
+.clients-item :hover.clients-link {
+  fill: var(--hover-color);
+  border: 1px solid #2196f3;
+}
+
 /* Футер */
 .footer {
   background-color: var(--third-background-color);
@@ -409,6 +429,10 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.footer {
+  display: flex;
+}
+
 .footer-link {
   display: inline-block;
   font-family: var(--secondary-font);
@@ -421,6 +445,7 @@ img {
 }
 .address {
   font-style: normal;
+  width: 231px;
 }
 
 .address-location {
@@ -444,7 +469,49 @@ img {
 .footer-contacts:focus {
   color: var(--hover-color);
 }
-
+/* Присоединяйтесь */
+.footer-icon-conteiner {
+  padding-top: 12px;
+  padding-bottom: 40px;
+}
+.footer-icon-title {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.17;
+  color: #ffffff;
+}
+.footer-icon-list {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  /* justify-content: center; */
+}
+.footer-icon-item {
+  margin-right: 10px;
+  text-align: center;
+}
+.footer-icon-item:last-child {
+  margin-right: 0px;
+}
+.footer-icon-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  /* outline: 2px solid floralwhite; */
+}
+.footer-icon-card {
+  fill: #ffffff;
+  width: 20px;
+  height: 20px;
+}
+.footer-icon-item :hover.footer-icon-link,
+.footer-icon-item :focus.footer-icon-link {
+  background-color: var(--hover-color);
+}
 /* Портфолио */
 
 .portfolio {
@@ -472,7 +539,6 @@ img {
   color: var(--main-color);
   border-radius: 4px;
   padding: 6px 22px;
-  /* margin-bottom: 50px; */
   border: 0px;
 }
 .portfolio-button:hover,
@@ -485,10 +551,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
-  /* width: 370px;
-  height: 404px; 
-  margin-right: calc(-1 * var(--main-li-margin));
-  margin-bottom: calc(-1 * var(--main-li-margin)); */
 }
 .portfolio-item {
   margin-right: var(--main-li-margin);
@@ -501,9 +563,6 @@ img {
 .portfolio-item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 }
-/* .portfolio-first-title {
-  visibility: hidden;
-} */
 
 .portfolio-title {
   font-size: 18px;
@@ -524,13 +583,17 @@ img {
   display: inline-block;
   width: 370px;
 }
+.portfolio-item :hover.portfolio-link,
+.portfolio-item :focus.portfolio-link {
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-radius: 1px;
+}
+
 .title-conteiner {
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-radius: 1px;
 }
