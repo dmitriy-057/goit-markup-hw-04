@@ -429,9 +429,9 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.footer {
+/* .footer {
   display: flex;
-}
+} */
 
 .footer-link {
   display: inline-block;
