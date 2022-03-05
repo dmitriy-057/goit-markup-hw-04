@@ -121,10 +121,17 @@ img {
 }
 
 /* контакты */
+.header-list {
+  display: flex;
+  align-items: center;
+}
 .header-item:not(:last-child) {
   margin-right: 50px;
 }
-
+.contacts {
+  display: flex;
+  align-items: center;
+}
 .contacts {
   font-size: 14px;
   font-weight: 500;
@@ -134,18 +141,22 @@ img {
   padding: 31px 0 32px;
 }
 
-.contacts:hover,
-.contacts:focus {
+.header-item :hover,
+.header-item :focus {
   color: var(--hover-color);
 }
 
 .contacts-icon-email {
   width: 16px;
   height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 .contacts-icon-phone {
   width: 10px;
   height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 /* Герой */
 .hero {
@@ -421,6 +432,7 @@ img {
 }
 
 /* Футер */
+
 .footer {
   background-color: var(--third-background-color);
   max-width: 1600px;
@@ -429,9 +441,9 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-/* .footer {
+.footer {
   display: flex;
-} */
+}
 
 .footer-link {
   display: inline-block;
