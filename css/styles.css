@@ -435,14 +435,15 @@ img {
 
 .footer {
   background-color: var(--third-background-color);
-  max-width: 1600px;
+  /* max-width: 1600px; */
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
-.footer {
+.footer-conteiner {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-link {
@@ -462,17 +463,13 @@ img {
 
 .address-location {
   display: inline-block;
-  /* width: 231px; */
   font-size: 14px;
   line-height: 1.7;
   color: #ffffff;
-  /* margin-bottom: 9px; */
 }
 .footer-contacts {
   display: inline-block;
-  /* width: 231px; */
   color: rgba(255, 255, 255, 0.6);
-  /* margin-bottom: 9px; */
 }
 .address-item:not(:last-child) {
   margin-bottom: 9px;
@@ -483,8 +480,7 @@ img {
 }
 /* Присоединяйтесь */
 .footer-icon-conteiner {
-  padding-top: 12px;
-  padding-bottom: 40px;
+  margin-left: 70px;
 }
 .footer-icon-title {
   text-transform: uppercase;
