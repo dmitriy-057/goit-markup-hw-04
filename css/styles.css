@@ -334,6 +334,9 @@ img {
 }
 .team-item {
   background-color: var(--secondary-background-color);
+  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
+    0px 1px 3px 0px #0000001f;
+  border-radius: 4px;
 }
 .person-name {
   font-size: 16px;
@@ -351,10 +354,6 @@ img {
 .person-card {
   padding-top: 30px;
   padding-bottom: 30px;
-  box-shadow: 0px 2px 1px 0px #00000033;
-  box-shadow: 0px 1px 1px 0px #00000024;
-  box-shadow: 0px 1px 3px 0px #0000001f;
-  border-radius: 4px;
 }
 .personal-list {
   list-style: none;
@@ -376,6 +375,7 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  fill: #afb1b8;
 }
 .personal-link-card {
   width: 20px;
@@ -421,14 +421,16 @@ img {
   padding-bottom: 16px;
   padding-left: 32px;
   padding-right: 32px;
+  fill: #afb1b8;
 }
 .clients-link-card {
   width: 106px;
   height: 60px;
 }
-.clients-item :hover.clients-link {
+.clients-item :hover.clients-link,
+.clients-item :focus.clients-link {
   fill: var(--hover-color);
-  border: 1px solid #2196f3;
+  border: 1px solid var(--hover-color);
 }
 
 /* Футер */
@@ -553,6 +555,8 @@ img {
 .portfolio-button:focus {
   background-color: var(--hover-color);
   color: #fff;
+  box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+    0px 3px 1px 0px #0000001a;
 }
 /* Проекты */
 .portfolio-list {
