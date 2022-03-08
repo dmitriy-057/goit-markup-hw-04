@@ -597,10 +597,8 @@ img {
 }
 .portfolio-item :hover.portfolio-link,
 .portfolio-item :focus.portfolio-link {
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-radius: 1px;
+  box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f,
+    0px 1px 1px 0px #0000001f;
 }
 
 .title-conteiner {
@@ -608,4 +606,8 @@ img {
   padding-right: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-radius: 1px;
 }
